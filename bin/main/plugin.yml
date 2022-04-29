@@ -1,0 +1,6 @@
+name: ProofVoteBan
+version: '${version}'
+main: com.kamesuta.power.proofvoteban.ProofVoteBan
+api-version: 1.16
+authors: [ yuu_111, Kamesuta ]
+website: https://www.kamesuta.com/
