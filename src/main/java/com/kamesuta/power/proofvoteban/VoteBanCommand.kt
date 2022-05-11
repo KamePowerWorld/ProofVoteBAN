@@ -14,10 +14,6 @@ class VoteBanCommand (val plugin: ProofVoteBan) : Command("voteban") {
         usage()
         {
             executes {
-
-                val player = this.typedArgs[0] as String
-
-                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "ban $player");
                 success("テスト")
             }
         }

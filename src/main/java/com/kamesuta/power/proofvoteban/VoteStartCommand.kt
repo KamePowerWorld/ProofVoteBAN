@@ -17,12 +17,10 @@ class VoteStartCommand (plugin: ProofVoteBan) : Command("start") {
             executes {
 
                 val player = this.typedArgs[0] as String
-                if (player != "") {
-                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "ban $player");
-                    success("テスト")
-                } else {
-                    success("プレイヤー名が正しくありません")
-                }
+                val sender = this.sender
+
+                Bukkit.dispatchCommand(sender, "ban $player")
+                success("テスト")
             }
         }
     }
